@@ -66,4 +66,4 @@ myLayout = tiled ||| Mirror tiled ||| Full
 
 myStartupHook = do
 	spawnOnce "nitrogen --restore &"
-	spawnOnce "compton &"
+	spawnOnce "picom &"
