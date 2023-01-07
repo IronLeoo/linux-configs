@@ -9,12 +9,6 @@ Config { overrideRedirect = False
 				, "--high"	, "red"
 				, "--normal"	, "green"
 				] 10
-			  , Run Alsa "default" "Master"
-				[ "--template", "Vol. <volumestatus>"
-				, "--suffix", "True"
-				, "--"
-				, "--on", ""
-				]
 			  , Run Memory ["--template", "Mem: <usedratio>%"] 10
 			  , Run Swap [] 10
 			  , Run Date "%d.%m.%Y <fc=#8be9fd>%H:%M</fc>" "date" 10
@@ -22,4 +16,4 @@ Config { overrideRedirect = False
 			  ]
 	, sepChar = "%"
 	, alignSep = "}{"
-	, template = "%XMonadLog% }{ %alsa:default:Master% | %cpu% | %memory% %swap% | %date% "
+	, template = "%XMonadLog% }{ %cpu% | %memory% %swap% | %date% "
