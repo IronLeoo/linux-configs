@@ -34,26 +34,16 @@ fi
 
 # HiDPI settings
 #xrandr --dpi 200/eDP1
-#barheight=39
-#iconsize=32
+#export BARHEIGHT=39
+#export ICONSIZE=32
 
-barheight=21
-iconsize=18
-
-stalonetray --slot-size $barheight --icon-size $iconsize &
+export BARHEIGHT=21
+export =18
 
 xsetroot -cursor_name left_ptr
 
 xbindkeys
 
 xscreensaver -no-splash &
-
-cbatticon &
-
-volctl &
-
-if [ -x /usr/bin/nm-applet ] ; then
-	nm-applet --sm-disable &
-fi
 
 [[ -f ~/.bash_profile ]] && . ~/.bash_profile

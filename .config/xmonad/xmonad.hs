@@ -72,5 +72,9 @@ myLayout = tiled ||| Mirror tiled ||| Full
     delta = 3/100
 
 myStartupHook = do
+	spawnOnce "stalonetray --slot-size $BARHEIGHT --icon-size $ICONSIZE &"
+        spawnOnce "cbatticon &"
+        spawnOnce "volctl &"
+        spawnOnce "nm-applet &"
 	spawnOnce "nitrogen --restore &"
 	spawnOnce "picom &"
