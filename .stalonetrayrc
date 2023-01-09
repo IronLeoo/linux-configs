@@ -1,0 +1,10 @@
+background "#2f0e44"
+geometry 6x1-0+0
+icon_gravity NE
+grow_gravity NE
+scrollbars horizontal
+transparent false
+window_layer normal
+window_strut top
+window_type dock
+xsync false
