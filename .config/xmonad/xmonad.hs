@@ -39,8 +39,8 @@ myXmobarPP :: PP
 myXmobarPP = def
     { ppSep		= purple " | "
     , ppTitleSanitize	= xmobarStrip
-    , ppCurrent		= pink . wrap " " "" . xmobarBorder "Top" "#feaadb" 2
-    , ppHidden		= purple . wrap " " ""
+    , ppCurrent		= white . wrap " " "" . xmobarBorder "Top" "#f8f8f2" 2
+    , ppHidden		= pink . wrap " " ""
     , ppHiddenNoWindows	= lowPurple . wrap " " ""
     , ppUrgent		= red . wrap (yellow "!") (yellow "!")
     , ppOrder		= \[ws, l, _, wins] -> [ws, l, wins]
