@@ -36,6 +36,7 @@ fi
 #xrandr --dpi 200/eDP1
 #export BARHEIGHT=39
 #export ICONSIZE=32
+#export GDK_SCALE=2
 
 export BARHEIGHT=21
 export ICONSIZE=18
