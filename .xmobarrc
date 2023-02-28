@@ -1,8 +1,8 @@
 Config { overrideRedirect = False
-	, font		= "xft:Noto Sans Mono:size=9"
+	, font		= "xft:Noto Sans Mono-18"
 	, bgColor	= "#2f0e44"
 	, fgColor	= "#feaadb"
-	, position	= TopW L 90
+	, position	= TopSize L 90 39
         , lowerOnStart  = True
         , persistent    = True
 	, commands	= [ Run Cpu
