@@ -38,7 +38,7 @@ fi
 #export ICONSIZE=32
 #export GDK_SCALE=2
 #export QT_AUTO_SCREEN_SCALE_FACTOR=1
-#QT_FONT_DPI=192
+#export QT_FONT_DPI=192
 
 export BARHEIGHT=21
 export ICONSIZE=18
